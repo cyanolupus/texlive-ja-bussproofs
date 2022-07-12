@@ -17,7 +17,8 @@ RUN tlmgr install \
   collection-langjapanese \
   collection-latexextra \
   latexmk \
-  bussproofs
+  bussproofs \
+  physics
 
 FROM debian:11.3-slim
 ENV PATH /usr/local/bin/texlive:$PATH

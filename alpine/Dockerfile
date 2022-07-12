@@ -17,7 +17,8 @@ RUN tlmgr install \
   collection-langjapanese \
   collection-latexextra \
   latexmk \
-  bussproofs
+  bussproofs \
+  physics
 
 FROM alpine:3.16.0
 ENV PATH /usr/local/bin/texlive:$PATH
