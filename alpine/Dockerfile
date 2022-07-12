@@ -16,7 +16,8 @@ RUN tlmgr install \
   collection-fontsrecommended \
   collection-langjapanese \
   collection-latexextra \
-  latexmk
+  latexmk \
+  bussproofs
 
 FROM alpine:3.16.0
 ENV PATH /usr/local/bin/texlive:$PATH

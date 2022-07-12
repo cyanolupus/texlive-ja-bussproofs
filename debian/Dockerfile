@@ -16,7 +16,8 @@ RUN tlmgr install \
   collection-fontsrecommended \
   collection-langjapanese \
   collection-latexextra \
-  latexmk
+  latexmk \
+  bussproofs
 
 FROM debian:11.3-slim
 ENV PATH /usr/local/bin/texlive:$PATH
