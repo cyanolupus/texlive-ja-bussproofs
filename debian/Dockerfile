@@ -16,7 +16,8 @@ RUN tlmgr install \
   collection-fontsrecommended \
   collection-langjapanese \
   collection-latexextra \
-  latexmk \
+  latexmk
+RUN tlmgr install \
   bussproofs \
   physics
 
