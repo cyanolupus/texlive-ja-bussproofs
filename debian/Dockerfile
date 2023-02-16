@@ -1,4 +1,4 @@
-FROM debian:11.5-slim AS installer
+FROM debian:11.6-slim AS installer
 ENV PATH /usr/local/bin/texlive:$PATH
 WORKDIR /install-tl-unx
 RUN apt-get update
@@ -21,7 +21,7 @@ RUN tlmgr install \
   bussproofs \
   physics
 
-FROM debian:11.5-slim
+FROM debian:11.6-slim
 ENV PATH /usr/local/bin/texlive:$PATH
 WORKDIR /workdir
 COPY --from=installer /usr/local/texlive /usr/local/texlive
